@@ -6,25 +6,21 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Entity
+// @Entity At the moment not an entity. Not recorded in the database
+// Only categories are.
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class Transaction {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 
-    @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false)
     private BigDecimal amount;
 
-    @Column(nullable = false)
-    private Date date;
+    private String date;
 
     private String category;
 }
