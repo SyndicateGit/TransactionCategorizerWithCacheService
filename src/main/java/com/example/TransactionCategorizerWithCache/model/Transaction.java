@@ -1,10 +1,8 @@
-package com.example.TransactionCategorizerWithCache.entity;
+package com.example.TransactionCategorizerWithCache.model;
 
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 // @Entity At the moment not an entity. Not recorded in the database
 // Only categories are.

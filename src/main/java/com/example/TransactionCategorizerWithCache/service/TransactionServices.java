@@ -1,6 +1,6 @@
 package com.example.TransactionCategorizerWithCache.service;
 
-import com.example.TransactionCategorizerWithCache.entity.Transaction;
+import com.example.TransactionCategorizerWithCache.model.Transaction;
 
 import java.util.List;
 
