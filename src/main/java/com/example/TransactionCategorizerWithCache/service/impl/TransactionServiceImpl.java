@@ -17,6 +17,7 @@ import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
 
+import java.time.Duration;
 import java.util.*;
 
 @Service
@@ -36,7 +37,7 @@ public class TransactionServiceImpl implements TransactionServices {
                 "Return JSON in a single line without whitespace." +
                 "Categories should be 1 word max, capitalize the first letter, and if unable to categorize, return 'Other'.";
 
-        OpenAiService openAIService = new OpenAiService(AIToken);
+        OpenAiService openAIService = new OpenAiService(AIToken, Duration.ofSeconds(30));
         List<ChatMessage> messages = new ArrayList<>();
         messages.add(new ChatMessage("user", prompt));
 
