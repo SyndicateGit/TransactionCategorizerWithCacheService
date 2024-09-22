@@ -21,4 +21,15 @@ public class Transaction {
     private String date;
 
     private String category;
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "id='" + id + '\'' +
+                ", description='" + description + '\'' +
+                ", amount=" + amount +
+                ", date='" + date + '\'' +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }
